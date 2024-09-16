@@ -1,0 +1,383 @@
+body{
+    font-family: var( --bs-font-sans-serif);
+}
+
+/* ---------------header-------------- */
+
+
+
+.header{
+    
+    background:rgb(255, 255, 255) ;
+    z-index: 10;
+    
+}
+
+
+.logo{
+    height: 5rem;
+}
+
+.logo img{
+    position: relative;
+    height: 100%;
+}
+
+
+.header ul a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 500; 
+    letter-spacing: 1px;
+    transition: 0.5s;
+    text-align: center;
+    width: 100%;
+    border-radius: none;
+
+}
+
+.header ul a:hover{
+    background: rgb(0, 0, 0) ;
+    color:rgb(255,187,5) ;
+   
+}
+
+.header ul a:active{
+    background: rgb(0, 0, 0) ;
+    color:rgb(255,187,5) ;
+   
+}
+
+.but{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(0, 0, 0)  ;
+    color:rgb(255, 255, 255)  ;
+}
+
+.but:hover{
+    background:  rgb(255,187,5) ;
+    color:black ;
+}
+
+#display2{
+    display: none;
+}
+
+#menu{
+  height: 0rem;
+     
+}
+
+#none {
+     display: none;
+   
+    
+    
+}
+
+
+
+/* ----------------------section veiw------------------------ */
+.evi{
+    height:7rem ;
+    
+}
+
+.view{
+    height: 90vh;
+    background: url(../images/png.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+
+.view-container{
+height: 100%;
+}
+.wid{
+    width: 100%;
+}
+
+.heading h1{
+    color: white;
+    font-size:3.5rem;
+    
+}
+
+/* ----------------Introduction------------------- */
+
+.intro{
+    background:rgb(245, 245, 245) ;
+}
+
+.intro h1{ font-size: 3.4rem;
+color: rgb(255, 255, 255);
+letter-spacing: 1.5px;
+font-weight: 600;
+}
+
+    .intro h2{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .color{ background:rgb(255, 188, 5);
+    }
+
+  
+        
+    .video-in{
+        height:100%;
+        width: 100%;
+       background:rgb(30, 29, 29);
+    }
+
+  
+
+
+    /* -----------------------CONTACT SECTION------------------------ */
+    .contact{
+         background: rgb(255, 188, 5);
+     }
+     
+     .contact p{
+         text-align: center;
+         font-size: 1.7rem;
+         color: rgb(0, 0, 0);
+     }
+     
+     .contact h1{color: white;
+         text-align: center;
+         font-size: 3.5rem;
+         font-weight: 600;
+        
+     }
+     
+     .lo{color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 10px rgb(0, 0, 0);
+        font-size: 2rem;
+        font-weight: 600;
+    }
+ 
+   .map{
+    height: 500px;
+   }
+    
+.map iframe{width: 100%;
+   height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.459);
+    }
+
+/* ----------------------comment---------------------------- */
+.goal{
+    width: 70px;
+    height: 70px;
+    
+}
+
+.view-round{
+    border-radius: 8px;
+}
+
+.comment{
+background: black;
+}
+
+.comment h1{
+    color: white;
+    font-weight: 600;
+    font-size: 3.5rem;
+
+}
+
+.co{
+    background:rgb(255, 188, 5);
+}
+
+.h{
+    background: white;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.h:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158);
+}
+
+.white{
+    color:rgb(255, 188, 5) ;
+    font-size: 1.4rem;
+}
+/* -------------------------footer----------------------- */
+.fiter{
+font-size: 1.1rem;
+}
+
+.tex{
+    font-size: 2rem;
+    color:rgb(255, 188, 5) ;
+}
+
+/* ----------------------course------------------ */
+
+.course{background: rgb(255, 188, 5);
+   
+}
+
+.black{
+    border: 1px solid black;
+background: black;
+border-radius: 4px;
+}
+
+
+
+.course label{
+    padding-top: 10px;
+font-size:1.3rem;
+background: black;
+color: white;
+}
+
+.course ul{
+    background: white;
+}
+
+.left{
+    position: absolute;
+    right: 2%;
+}
+
+#play2,#play4,#play6,#play8,#play10,#play12{
+    display: none;
+}
+
+
+
+#detail,#detail2,#detail3,#detail4,#detail5,#detail6{
+    display: none;
+}
+
+.tab{
+
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(0, 0, 0)  ;
+    color:rgb(255, 255, 255)  ;
+}
+
+.tab:hover{
+    background: white ;
+    color:black ;
+}
+
+.n{
+    min-height: 63vh;
+}
+
+
+
+/* ---------------Admission page----------------- */
+.info{
+min-height: 80vh;
+background:rgb(255, 188, 5) ;
+}
+
+.Fbotton{
+    border: none;
+   background: white;
+   color: black ;
+   font-size: 2rem;
+   font-weight: 600;
+}
+.Fbotton:hover{
+    background: black;
+    color: white;
+}
+
+.form{
+    background:rgb(255, 188, 5) ;
+      
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        animation: gain 0.4s  ;
+        display: none;
+       }
+       
+       @keyframes gain {
+           from{transform: scale(0);}
+           to{transform: scale(1);}
+           
+       }
+
+
+
+
+.form .f{
+    background: white;
+}
+
+
+
+
+
+.third:hover{
+    outline:  3.6px solid rgba(255, 188, 5, 0.47);
+    border: 1px solid rgb(255, 188, 5);
+    box-shadow:0px 0px 4px rgba(255, 188, 5, 0.503);
+}
+
+
+/* -------------------responsive------------------- */
+@media (max-width:320px) {
+    .heading h1{
+        color: white;
+        font-size: 2rem;
+    } 
+    
+    .intro h1 , .comment h1,.contact h1 { font-size: 2rem;}
+
+    .short{
+        font-size: 1.8rem;
+        border-top: 1px solid black;
+    }
+
+    .intro h2,.comment h2,.contact h2{
+        font-size: 1.2rem;
+    }
+
+    .white{
+        color:rgb(255, 188, 5) ;
+        font-size: 1rem;
+    }
+
+    .course label{
+        
+    font-size:1rem;
+    
+    }
+
+    
+}
+
+@media (min-width:321px) and (max-width:1000px) {
+    .heading h1{
+        color: white;
+        font-size: 2.6rem;
+    } 
+
+    
+    .intro h1 ,.comment h1 ,.contect h1 { font-size: 2.8rem;}
+
+    .intro h2 ,.comment h2,.contact h2{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Barber Shop</title>
+</head>
+<body>
+    
+    <header class="header">
+    <div class="navbar container">
+        <img src="../images/logo.png" alt="" class="logo-img">
+    </div>
+
+       <div class="banner-center">
+            <h1 class="text-white">Hair Studio</h1>
+            <p class="text-white"> Style Your Hair IS Your Life</p>
+            <div class="incenter">
+                <Button class="btn-primary"><span></span> Find Out </Button>
+                <button class="btn-primary"><span></span> Read More</button>
+            </div>
+       </div>
+    </header>
+
+      <div id="sidenav">
+          <nav>
+
+            <ul class="you">
+                <li><a href="">HOME</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">MEET US</a></li>
+            </ul>
+        </nav>
+        </div>
+    
+        <div id="menubtn">
+            <img src="../images/menu.png" id="menu">
+        </div>
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            menubtn.onclick = function() {
+                if (sidenav.style.right == "-350px") {
+                    sidenav.style.right = "0";
+                    menu.src = "../images/close.png";
+                }
+                else{
+                    sidenav.style.right = "-350px";
+                    menu.src = "../images/menu.png";
+                }
+            }
+</script>
+
+    <!-- -----------------------------section faetuers--------------------------- -->
+          <section class="choose">
+            <h2>Featuers</h2>
+            <h1>Why Choose Us</h1>
+               <div class="container us">
+                   <div class="text">
+
+                    <div class="box">
+                  <h2>Experienced Staff</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est explicabo et molestiae rem.</p>
+                    </div>
+
+                    <div class="box">
+                     <h2>Pre Booking online</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est explicabo et molestiae rem.</p>
+                    </div>
+
+                    <div class="box">
+                    <h2>Affordable Cost</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam est explicabo et molestiae rem.</p>
+                    </div>
+
+                   </div>
+
+                   <div class="pic">
+                    <img src="../images/barber-man.jpg" >
+                   </div>
+               </div>
+ 
+          </section>
+
+          <!-- ------------------section Services--------------------- -->
+          <section class="ser">
+            <h2>SERVICES</h2>
+            <h1>We Provider Better</h1>
+            <div class="container go">
+                <div class="one">
+                    <div class="yes"><img src="../images/pic-1.jpg" >
+                    <div class="font">
+                            <h2>Hair Styling</h2>
+                            <p>this is test under description of barber this is test under description of barber</p>
+
+                    </div></div>
+                    <div class="yes"><img src="../images/pic-2.jpg" >
+                    <div class="font">
+                        <h2>Hair Styling</h2>
+                        <p>this is test under description of barber this is test under description of barber</p>
+
+                    </div></div>
+                </div>
+                <div class="one">
+                    <div class="yes"><img src="../images/pic-3.jpg" >
+                    <div class="font">
+                        <h2>Hair Styling</h2>
+                        <p>this is test under description of barber this is test under description of barber</p>
+
+                    </div>
+                </div>
+                    <div class="yes"><img src="../images/pic-4.jpg" >
+                    <div class="font">
+                        <h2>Hair Styling</h2>
+                        <p>this is test under description of barber this is test under description of barber</p>
+
+                    </div></div>
+                </div>
+            </div>
+          </section>
+        
+
+<!-- ----------------------------section Testimonial--------------------------------- -->
+<section class="test">
+    <h2>TESTIMONIAL</h2>
+    <h1>What Client Says</h1>
+    <div class="ti container">
+        <div class="fit">
+            <div class="f1">
+                <div class="pi"><div class="pik">
+                    <img src="../images/img-1.jpg" >
+                </div>
+                    <div class="had">
+                        <h2>KEN NORMAN</h2>
+                    <h3>@Kennorman</h3>
+                    </div>
+                </div>
+                <div class="type">
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt tenetur ducimus corrupti ea nisi aliquid adipisci cupiditate ex eum reiciendis accusantium! Ut explicabo quasi eveniet quae repudiandae.</p>
+    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="fit f2">
+            <div class="pi">
+                <div class="pik">
+                    <img src="../images/img-2.jpg" >
+                </div>
+                <div class="had">
+                    <h2>Liara Karian</h2>
+                <h3>@liarakarian</h3>
+                </div>
+                
+            </div>
+
+
+            <div class="type">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt tenetur ducimus corrupti ea nisi aliquid adipisci cupiditate ex eum reiciendis accusantium! Ut explicabo quasi eveniet quae repudiandae.</p>
+            </div>
+        </div>
+
+
+        <div class="fit f3">
+            <div class="pi">
+                <div class="pik">
+                <img src="../images/img-3.jpg" >
+            </div>
+               <div class="had">
+                <h2>Rick Danial</h2>
+                <h3>@rickydanial</h3>
+               </div>
+            </div>
+
+        
+            <div class="type">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt tenetur ducimus corrupti ea nisi aliquid adipisci cupiditate ex eum reiciendis accusantium! Ut explicabo quasi eveniet quae repudiandae.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- -----------------------------section Contact------------------------------ -->
+
+<section class="contact">
+    <h2>CONTACT</h2>
+    <h1>Visit Shop Today</h1>
+
+    <div class="container  con">
+
+        <div class="left">
+        <h2>Opening Hours</h2>
+        <p>Monday To Friday - 9am to 9pm</p>
+        <p>Saturday And Sunday - 8am to 11pm</p>
+        </div>
+
+        <div class="right">
+         <h2>Get In Touch</h2>
+         <p>#30 abc Colony xyz vihar in</p>
+         <p>example@gmail.com</p>
+         <p>+01 1123456789</p>
+
+        </div>
+
+    </div>
+      <p>@Copyright 2020 easy Tutorials YouTube Channel</p>
+</section>
+      
+    
+</body>
+</html>

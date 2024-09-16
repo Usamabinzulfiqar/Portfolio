@@ -1,0 +1,32 @@
+<?php
+$stu_name = $_POST['sname'];
+$stu_father = $_POST['sfather'];
+$stu_gender = $_POST['sgender'];
+$stu_religion = $_POST['sreligion'];
+$stu_qualification = $_POST['squalification'];
+$stu_email = $_POST['semail'];
+$stu_whatsup = $_POST['swhatsup'];
+$stu_fathermobile = $_POST['sfathermobile'];
+$stu_adress = $_POST['sadress'];
+$stu_course = $_POST['scourse'];
+
+
+
+
+$conn=mysqli_connect("localhost","root","","marvi") or die("Connection Failed.");
+
+
+
+$sql="INSERT INTO student( NAME, FATHER, GenderID, RELIGION, QUALIFICATION, EMAIL, WhatsUp, FatherMobileNo, ADRESS, COURSE) VALUES 
+('{$stu_name}','{$stu_father}','{$stu_gender}','{$stu_religion}','{$stu_qualification}','{$stu_email}','{$stu_whatsup}','{$stu_fathermobile}','{$stu_adress}','{$stu_course}')
+";
+
+
+$result= mysqli_query($conn,$sql) or die("query unsuccesful.");
+
+header("location: http://localhost/The Marvi/Index.php");
+
+mysqli_close($conn);
+
+?>
+

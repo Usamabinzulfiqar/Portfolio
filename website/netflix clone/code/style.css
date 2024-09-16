@@ -1,0 +1,635 @@
+*,*::before,*::after{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+html{font-family: Arial, Helvetica, sans-serif;}
+
+body{
+    background: black;
+color: #fff;
+font-size: 62.5%;
+}
+
+/* ----------------------utility Classes------------------ */
+
+.container{
+    width: 75%;
+    
+}
+
+
+
+
+
+/* -----------------header section style---------------------- */
+.header{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/header-image.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+border-bottom:3px solid  rgb(31, 31, 31);
+
+}
+
+.navbar{
+    width: 90%;
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.navbar img{
+    width: 150px;
+
+}
+
+.btn-one{
+    margin:0 15px;
+padding: 10px 15px;
+font-size:1.5em ;
+color: white;
+background: red;
+border-radius: 2px;
+border: none;
+outline: none;
+cursor: pointer;
+text-align: center;
+}
+
+.btn-one:hover{
+    background: #444;
+    border: none;
+}
+
+.oye{
+background: none;
+border: 0.5px solid white;
+padding: 8px 15px;
+}
+
+option{color: black;
+}
+
+.fish{
+text-align: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+
+}
+
+.fish h1{
+font-size: 4em;
+}
+
+.fish h3{
+font-size: 1.8em;
+font-weight: 300;
+line-height: 2.5em;
+}
+
+.fish P{
+font-size: 1.5em;
+line-height:3em ;
+}
+
+.fish form.email input[type="email"]{
+    width: 35%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.8em;
+    outline: none;
+}
+
+.fish form.email input[type="email"]:focus{
+    border: 2px solid goldenrod;
+    background: #fff;
+}
+
+.fish form.email button[type="submit"]{
+    height: 50px;
+font-size: 1.8em;
+margin-left: 0;
+font-weight: 500;
+}
+
+/* -----------------section two to five style---------------- */
+.ho{position: relative;
+    border-bottom:3px solid  rgb(31, 31, 31);}
+
+.two{
+margin: auto;
+display: flex;
+justify-content: space-between;
+height: 450px;
+
+}
+
+.image{
+position: relative;
+width: 40%;
+height: 300px;
+margin: auto;
+}
+
+.image img{
+    position: absolute;
+    width: 100%;
+height: 100%;
+}
+
+.content{margin: auto;}
+
+.content h1{
+font-size: 4em;
+font-weight: 300;
+line-height: 4rem;
+
+}
+
+.content p{
+font-size: 2em;
+line-height: 1.5rem;
+}
+
+/* ---------------------section six style------------------- */
+
+section.faq{
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-bottom:3px solid  rgb(31, 31, 31);
+}
+
+section.faq h2{
+font-size: 4em;
+margin: 3rem auto;
+}   
+
+section.faq ul.accordian{
+
+width: 50%;
+margin-bottom: 1rem;
+}
+
+ul.accordian li{
+list-style: none;
+}
+
+
+.accordian label{
+background: #303030;
+display: block;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 2.5em;
+cursor: pointer;
+}
+
+.accordian label::after{
+    content: '+';
+    font-size: 2em;
+    position: relative;
+    right: 15px;
+    transition: transform 0.5s;
+}
+
+
+.accordian input[type="checkbox"]{
+    display:none ;
+    
+}
+
+
+
+.accordian .conten{
+font-size: 1.5em;
+max-height: 0;
+overflow: hidden;
+
+
+}
+
+section.faq ul.accordian li input[type="checkbox"]:checked ~ .conten{
+     max-height: 600px;
+}
+  
+section.faq ul.accordian li input[type="checkbox"]:checked ~  label::after{
+    transform: rotate(45deg);
+}
+
+.eme{
+    margin-top: 3rem;
+   margin-bottom: 4rem;
+    width: 50%;
+    
+}
+ form.eme input[type="email"]{
+    width:60% ;
+    height: 50px;
+    text-align: left;
+    font-size: 1.8em;
+    outline: none;
+    position: relative;
+}
+
+
+
+ form.eme input[type="email"]:focus{
+    border: 2px solid goldenrod;
+    background: #fff;
+}
+
+ form.eme button[type="submit"]{
+    height: 50px;
+    width: 30%;
+font-size: 1.8em;
+margin-left: 0;
+font-weight: 500;
+}
+
+p.size{
+    font-size: 1.5em;
+    line-height: 3rem ;
+}
+
+p.left{padding-top: 3px;
+    text-align: left;
+    color: orangered;
+    position: relative;
+    top: 100%;
+    left:4%;
+}
+
+/* -------------------------Footer-------------------------- */
+
+.jon{
+width: 65%;
+margin:  3rem auto  0 auto ;
+
+
+}
+
+.footer h2{
+    color: rgb(31, 31, 31);
+    line-height: 3em;
+}
+
+div.row{
+display: flex;
+justify-content: space-between;
+}
+
+div.col{
+display: flex;
+flex-direction: column;
+height: 100px;
+justify-content: space-around;
+}
+
+div.col a{
+color:rgb(31, 31, 31) ;
+font-size: 1.3em;
+text-decoration: none;
+}
+
+.jony{
+    width: 65%;
+    margin: 2rem auto;
+    padding-left: 35px;
+    
+    }
+    
+
+
+    .btn-on{
+        margin:0 15px;
+    padding: 10px 15px;
+    font-size:1.5em ;
+    color:rgb(31, 31, 31);
+    background: red;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    }
+    
+    .btn-on:hover{
+        background: #fd0101;
+        color: #fff;
+        border: none;
+    }
+    
+    .oy{
+    background: none;
+    border: 0.5px solid rgb(31, 31, 31);
+    padding: 8px 15px;
+    }
+    
+   .oy option{color: rgb(31, 31, 31);
+    }
+    
+/* ---------------------------Responsive websit style ---------------------------- */
+
+@media (min-width:200px) and (max-width:750px){
+  
+        
+        html{   font-size:62.5%;}
+      
+        
+       
+        
+        
+        
+        
+        
+        /* -----------------header section style---------------------- */
+        .header{
+            width: 100%;
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/header-image.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        border-bottom:3px solid  rgb(31, 31, 31);
+        
+        }
+        
+        .navbar{
+            width: 90%;
+            height: 100px;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        
+        }
+        
+        .navbar img{
+            width: 150px;
+           
+        
+        }
+        
+        .smoke{
+
+display: flex;
+flex-direction: column;
+
+        }
+
+        .btn-one{
+           width: 100%;
+       margin: 2px auto;
+        font-size:1.5em ;
+        color: white;
+        background: red;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        }
+        
+        .btn-one:hover{
+            background: #444;
+            border: none;
+        }
+
+        .btn-one:active{
+            background: rgb(24, 212, 24);
+            border: none;
+        }
+        
+        .oye{
+        background: none;
+        border: 0.5px solid white;
+        padding: 8px 15px;
+        }
+        
+        option{color: black;
+        }
+        
+        .fish{
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        
+        }
+        
+        .fish h1{
+        font-size: 4em;
+        }
+        
+        .fish h3{
+        font-size: 1.8em;
+        font-weight: 300;
+        line-height: 2.5em;
+        }
+        
+        .fish P{
+        font-size: 1.5em;
+        line-height:3em ;
+        }
+        
+        
+
+        .fish form.email input[type="email"]{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            font-size: 1.8em;
+            outline: none;
+        }
+        
+        .fish form.email input[type="email"]:focus{
+            border: 2px solid goldenrod;
+            background: #fff;
+        }
+        
+        .fish form.email button[type="submit"]{
+            height: 50px;
+        font-size: 1.8em;
+        margin: 1rem auto;
+        font-weight: 500;
+       width: 95%;
+        }
+        
+        /* -----------------section two to five style---------------- */
+       
+        .two{
+        margin: auto;
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-between;
+        height: 450px;
+        
+        }
+        
+        .image{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        }
+        
+        
+        
+        /* ---------------------section six style------------------- */
+        
+       
+        
+        section.faq ul.accordian{
+        width: 85%;
+        margin-bottom: 1rem;
+        }
+        
+        
+        
+        
+        .accordian label{
+        background: #303030;
+        display: block;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2.5em;
+        cursor: pointer;
+        padding: 0 10px;
+        }
+        
+        .accordian label::after{
+            content: '+';
+            font-size: 2em;
+            position: relative;
+            right: 0 ;
+            transition: transform 0.5s;
+        }
+    
+        
+        .eme{
+            margin-top: 3rem;
+           margin-bottom: 4rem;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        
+        
+        
+         form.eme input[type="email"]:focus{
+            border: 2px solid goldenrod;
+            background: #fff;
+        }
+        
+         form.eme button[type="submit"]{
+            height: 50px;
+            width: 50%;
+        font-size: 2.5em;
+        margin-left: 0;
+        font-weight: 500;
+        }
+       
+        form.eme p{
+            display: none;
+        }
+        /* -------------------------Footer-------------------------- */
+        
+        .jon{
+        width: 65%;
+        margin:  3rem auto  0 auto ;
+        
+        
+        }
+        
+        .footer h2{
+            color: rgb(105, 105, 105);
+            line-height: 3em;
+        }
+        
+        div.row{
+        display: flex;
+        justify-content: space-between;
+        }
+        
+        div.col{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        }
+        
+        div.col a{
+        color:rgb(117, 117, 117) ;
+        font-size: 1.3em;
+        text-decoration: none;
+        }
+        
+        .jony{
+            width: 65%;
+            margin: 2rem auto;
+            padding-left: 35px;
+            
+            }
+            
+        
+        
+            .btn-on{
+                margin:0 15px;
+            padding: 10px 15px;
+            font-size:1.5em ;
+            color:#7e7e7e;
+            background: red;
+            border-radius: 2px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            }
+            
+            .btn-on:hover{
+                background: #fd0101;
+                color: #fff;
+                border: none;
+            }
+            
+            .oy{
+            background: none;
+            border: 0.5px solid #303030;
+            padding: 8px 15px;
+            }
+            
+           .oy option{color: rgb(31, 31, 31);
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+

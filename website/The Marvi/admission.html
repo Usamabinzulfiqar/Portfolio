@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
+    <title>Marvi Institute</title>
+
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./java and css/Index.css">
+    <script src="./java and css/js.js"></script>
+
+
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- ------------------header------------------- -->
+
+
+<header class="container fixed-top header shadow mt-sm-3">
+
+    <div class="row">
+        <div class="col-3 logo">
+             <img src="./images/logo/1-removebg-preview.png"  >
+        </div>
+    
+        <div class="col-2 offset-6    d-md-none d-flex align-items-center justify-content-center">
+            <button class="d-md-none  but btn btn-lg" id="display" type="button" onclick="menufunction()">m</button>
+            <button class="d-md-none  but  btn btn-lg" id="display2" type="button" onclick="menufunction2()">m</button>
+        </div>
+        
+        <div class="col-lg-7 offset-lg-1 col-md-9 p-0 d-md-block" id="menu">
+        <ul class=" list-group list-group-horizontal-md d-md-flex  " id="none">
+        <a href="./Index.php" class="py-md-4 py-2   border-bottom  border-0"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="./course.php" class="py-md-4 py-2  border-bottom border-0"><i class="fa-solid fa-book-open"></i>Course</a>
+        <a href="./admission.php" class="py-md-4 py-2   border-bottom border-0"><i class="fa-solid fa-id-card"></i> Admission</a>
+    </ul>
+
+    </div>
+    </div>
+    </header>
+
+<!-- -------------------- information-------------------- -->
+
+<section class="container-fluid info py-5" id="id2">
+    <div class="container evi  ">
+    </div>
+    
+    <div class="container">
+        <div class="row justify-content-between">
+            
+            <div class="col-md-5 col-12 pt-5 ">
+                
+                <ul class="list-group  shadow-lg ">
+                    
+                    <li class="list-group-item border-0 py-2 shadow ubz"><h2 class="text-center"> Duration</h2></li>    
+                    <li class="list-group-item border-0 shadow ubz">DIT IS ONE YEAR COURSE</li>
+                    <li class="list-group-item border-0 shadow ubz">CIT IS TWO MONTH COURSE</li>
+                    <li class="list-group-item border-0 shadow ubz">WEB Desinging SIX MONTH COURSE</li>
+                    <li class="list-group-item border-0 shadow ubz">Programming Languages IS SIX MONTH COURSE</li>
+                    <li class="list-group-item border-0 shadow ubz">Graphic Designing IS TWO MONTH COURSE</li>
+                    <li class="list-group-item border-0 shadow ubz">Coaching Classes IS TO MONTH COURSE</li>
+                    
+                    
+                  
+                   
+                </ul>
+            </div>
+
+
+            <div class="col-md-6 col-12 pt-5">
+                <ul class="list-group  shadow-lg ">
+                    
+                    <li class="list-group-item border-0 py-2 shadow ubz"><h2 class="text-center"> Require</h2></li>    
+                    <li class="list-group-item border-0 shadow ubz">
+                        <div class="row">
+                            <div class="col-8">Addmission Fee</div>
+                            <div class="col-4">RS. 2000</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0 shadow ubz">
+                        <div class="row">
+                            <div class="col-8">Monthly Fee</div>
+                            <div class="col-4">RS. 1500</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0 shadow ubz">
+                        <div class="row">
+                            <div class="col-8">Addmission Fee</div>
+                            <div class="col-4">RS. 2000</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0 shadow ubz">
+                        <div class="row">
+                            <div class="col-8">Addmission Fee</div>
+                            <div class="col-4">RS. 2000</div>
+                        </div>
+                    </li>
+                   
+                    
+                    
+                  
+                   
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-10 col-md-6 mx-auto mt-5"> 
+                <button class=" Fbotton btn-lg w-100 shadow-sm" onclick="apply()">Apply</button>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- --------------------section Form------------------- -->
+
+
+<section class="container-fluid form pt-5" id="id1">
+    <div class="container evi  ">
+    </div>
+<div class="container f pb-5 rounded-lg ">
+       <div class="row">
+        <div class="col-12">
+
+            
+                <div class="row py-5">
+                    <div class="col-3 logo">
+                        <img src="./images/logo/1-removebg-preview.png"  >
+                   </div>
+                    <div class="col-12 ">
+                         <h2 class="text-center ">Marvi Institute Of Information Technology TJM</h2>
+                    <h1 class="text-center short">ADMISSION FORM</h1>
+                </div>
+                   
+                </div>
+            
+
+                <form  action="savedata.php" method="POST">
+
+
+                <div class="row px-3 justify-content-md-around">
+                    <div class="col-md-5 col-12 py-4  rounded-lg shadow">
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <input type="text" name="sname" class="third form-control " placeholder="Name" required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <input type="text" name="sfather" class="third form-control " placeholder="Father Name" required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+
+                                <select name="sgender" id="gender" required class="third form-control " >
+                                  <?php
+                                  $conn=mysqli_connect("localhost","root","","marvi") or die("Connection Failed.");
+
+                                  $sql="SELECT * FROM gender";
+                                  $sql2="SELECT * FROM course";
+
+                                  $result= mysqli_query($conn,$sql) or die("query unsuccesful.");
+
+                                  while ($row = mysqli_fetch_assoc($result)) {
+                                
+                                  ?>
+
+                                    <option value="<?php echo $row['GID']; ?>" > 
+                                        <?php echo $row['GENDER']; ?></option>
+
+                                <?php } ?>
+
+                                 </select>
+                            </div>
+                           
+                            <div class="col-12 form-group">
+                                <input type="text" name="sreligion" class="third form-control " placeholder="Religion" required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <input type="text" name="squalification" class="third form-control " placeholder="Qualification" required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <input type="email" name="semail" class="third form-control " placeholder="Email" required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <input type="tel"  name="swhatsup" class="third form-control "  placeholder="What's Up # " pattern="['0-9']{11}"  oninvalid="this.setCustomValidity('Enter 11 character')"  
+                                required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <input type="tel"  name="sfathermobile" class="third form-control " placeholder="Father Mobile No " pattern="['0-9']{11}"  oninvalid="this.setCustomValidity('Enter 11 character')"  required>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <input type="text" name="sadress" class="third form-control " placeholder="Adress" required>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+            
+            
+            
+                    <div class="col-md-5 col-12 mt-5 mt-md-0 py-4  rounded-lg shadow">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <h3 class="text-left mb-4">Applied For Any One Coures</h3>
+                            </div>
+            
+                            <div class="col-12 form-group">
+                                <select name="scourse" id="course" required class="third form-control ">
+                                <?php
+                                
+
+                                  
+
+                                  $result2= mysqli_query($conn,$sql2) or die("query unsuccesful.");
+
+                                  while ($row = mysqli_fetch_assoc($result2)) {
+                                
+                                  ?>
+
+                                    <option value="<?php echo $row['CID']; ?>" > 
+                                        <?php echo $row['COURSE']; ?></option>
+
+                                <?php } ?>
+                                   
+
+                                 </select>
+                            </div>
+            
+                            <div class="col-12 my-4">
+                                <button class="btn-lg w-100 btn-success">SUBMIT</button>
+                                
+                            </div>
+
+                            <div class="col-12 ">
+                                <button class="btn-lg w-100 btn-danger " 
+                                onclick="document.getElementById('id1').style.display='none',
+                                document.getElementById('id2').style.display='block',
+                                document.getElementById('id3').style.display='block'
+                                ">CANCEL</button>
+                                
+                            </div>
+            
+                            <div class="col-12 mt-5">
+                                <h4 class="text-center"><i> Near Qazi petrol pump
+                                    Tando Jan muhammad, Digri, Mirpukhas <br>
+                                    Ph-03091138266</i>
+
+                                </h4>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </form>
+
+           
+        </div>
+       </div>
+    
+
+    <!-- -----------------------------footer------------------------------- -->
+
+<section class="container-fluid footer py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2 class="text-center tex "><i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands fa-facebook "></i>  
+              <i class="fa-brands fa-instagram "></i> </h2></div>
+            <div class="col-12">
+                <h2 class="text-center fiter"> @CopyRights UBZ WEB DEVLOPER</h2>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+    </div>
+   
+</section
+
+<!-- -----------------------------footer------------------------------- -->
+
+<section class="container-fluid footer py-5 " id="id3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2 class="text-center tex "><i class="fa-brands fa-twitter "></i>
+                <i class="fa-brands fa-facebook "></i>  
+              <i class="fa-brands fa-instagram "></i> </h2></div>
+            <div class="col-12">
+                <h2 class="text-center fiter"> @CopyRights UBZ WEB DEVLOPER</h2>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
